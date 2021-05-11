@@ -1,6 +1,8 @@
 import socket
 
-
+class ClientExeption(BaseException):
+    def __init__(self, ) -> None:
+        super().__init__()
 class Client():
     def __init__(self, addr, port, timeout=None):
         self.addr = addr
